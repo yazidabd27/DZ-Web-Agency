@@ -20,7 +20,7 @@ const Home=()=>{
       </div>
       <Features/>
       <div className="home-about">
-        <Image src="/assets/design-set-up.png" width={400} height={600} alt="design set up" />
+        <Image src="/assets/setup.png" width={400} height={500} alt="design set up" />
         <div className="about-description">
           <h1>What do we do?</h1>
           <p>

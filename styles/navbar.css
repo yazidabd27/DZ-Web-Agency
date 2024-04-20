@@ -1,11 +1,147 @@
 header{
     display: flex;
+    align-items: center;
+    position: fixed;
+    margin-top: 40px;
+    padding: 40px;
+    border-radius: 20px;
+    background-color: #fff;
+    width: 90%;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+    z-index: 1000;
+    box-shadow: 0 5px 5px 0 #aaa;
+    animation: drop 1s ease-in-out;
 }
 
-ul{
+header .togller{
+    display: none;
+    color: #333333;
+    cursor: pointer;
+}
+
+header .logo{
+    margin-right: auto;
+}
+
+@keyframes drop {
+    from{
+        top: -100%;
+        margin-top: 0;
+    }
+}
+
+header ul{
+    margin: 0 40px;
+}
+
+header a{
+    color: #333333;
+}
+
+header .logo a{
+    color: #1677a4;
+}
+
+header a.active{
+    color: #1677a4;
+}
+
+header a:hover{
+    color: #1677a4;
+}
+
+header .phone-number{
     display: flex;
+    align-items: center;
+    color: #333333;
+    font-weight: 500;
 }
 
-li{
-    list-style: none;
+header .phone-number i{
+    color: #1677a4;
+    margin-right: 10px;
+}
+
+header .social-media i{
+    color: #1677a4;
+    transition-duration: .2s;
+    transition-timing-function: ease-in-out;
+}
+
+header .social-media i:hover{
+    transform: scale(1.2);
+}
+
+header .language a{
+    display: flex;
+    align-items: center;
+    color: #1677a4;
+    font-size: 20px !important;
+}
+
+header .language i{
+    margin-right: 5px;
+    font-size: 20px;
+}
+
+header a:hover{
+    transform: scale(1.2);
+}
+
+@media (max-width:1280px) {
+    header .phone-number{
+        display: none;
+    }
+}
+
+@media (max-width:990px) {
+    header .social-media{
+        display: none;
+    }
+}
+
+@media (max-width:786px) {
+    header{
+        margin-top: 0px;
+        width: 100%;
+        border-radius: 0;
+    }
+
+    header nav{
+        position: absolute;
+        background-color: #fff;
+        flex-direction: column;
+        padding: 20px 0;
+        z-index: 1000;
+        width: 100%;
+        left: 0;
+        top: 0;
+        transform: translateY(-100%);
+        transition-duration: 1s;
+        transition-timing-function: ease-in-out;
+    }
+
+    header nav li{
+        margin: 10px 0;
+    }
+
+    header nav .language{
+        margin-top: 10px;
+    }
+
+    header .togller{
+        display: block;
+    }
+
+    header nav.drop{
+       top: 100%;
+       transform: translateY(0);
+    }
+
+    header ul{
+        flex-direction: column;
+    }
+
 }

@@ -53,9 +53,14 @@ footer i:hover{
 
 footer .copy-right span{
     margin-right: 5px;
+    line-height: 1.5;
 }
 
 @media (max-width: 730px) {
+    footer{
+        padding: 40px;
+    }
+
     .top-footer,
     .bottom-footer{
         flex-direction: column;
@@ -64,5 +69,11 @@ footer .copy-right span{
     footer .logo,
     footer .bottom-footer nav{
         margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 400px) {
+    footer .top-footer ul{
+        flex-direction: column;
     }
 }

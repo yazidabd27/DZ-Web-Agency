@@ -7,7 +7,7 @@ const Scroll = () => {
 
     
     const animate=() => {
-        if(window.scrollY>=featuresContainer.offsetTop-500){
+        if(window.scrollY>=featuresContainer.offsetTop-750){
             features[currentIndex].classList.add('visible');
             currentIndex++;
             if(currentIndex===features.length){

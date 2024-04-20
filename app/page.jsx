@@ -20,7 +20,7 @@ const Home=()=>{
       </div>
       <Features/>
       <div className="home-about">
-        <Image src="/assets/design-set-up.png" width={400} height={600} alt="team work" />
+        <Image src="/assets/design-set-up.png" width={400} height={600} alt="design set up" />
         <div className="about-description">
           <h1>What do we do?</h1>
           <p>
@@ -86,14 +86,14 @@ const Home=()=>{
         <Image src="/assets/shopify.png" width={100} height={100} alt="shopify"/>
       </div>
       <div className="contact-info">
-        <div className="mobile">
+        <Link className="mobile" href="tel:+213795247309">
           <i className="fa-solid fa-phone"></i>
           <span>+213795247309</span>
-        </div>
-        <div className="email">
+        </Link>
+        <Link className="email" href="mailto:aitboudaoudyazid27@gmail.com">
           <i className="fa-solid fa-envelope"></i>
           <span>aitboudaoudyazid27@gmail.com</span>
-        </div>
+        </Link>
       </div>
     </section>
   );
